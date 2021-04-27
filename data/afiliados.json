@@ -1,0 +1,56 @@
+[{
+    "id":"1",
+    "nombre":"Pedro",
+    "apellido":"Benitez",
+    "edad":"28",
+    "legajo":"695847",
+    "balance":"-2499",
+    "img":"https://robohash.org/leonardo?set=set3",
+    "provincias":"Buenos Aires",
+    "localidad":"Avellaneda",
+    "causas":"sanciones"
+},{
+    "id":"2",
+    "nombre":"Jose",
+    "apellido":"varela",
+    "edad":"32",
+    "legajo":"748596",
+    "balance":"-2499",
+    "img":"https://robohash.org/jose?set=set3",
+    "provincias":"CABA",
+    "localidad":"comuna 4",
+    "causas":"Administrativo"
+},{
+    "id":"3",
+    "nombre":"Maria",
+    "apellido":"Sanchez",
+    "edad":"38",
+    "legajo":"568978",
+    "balance":"0",
+    "img":"https://robohash.org/maria?set=set3",
+    "provincias":"Misiones",
+    "localidad":"Iguazu",
+    "causas":"Penal"
+},{
+    "id":"4",
+    "nombre":"Mirian",
+    "apellido":"Sanguinetti",
+    "edad":"60",
+    "legajo":"651575",
+    "balance":"-2499",
+    "img":"https://robohash.org/Mirian?set=set3",
+    "provincias":"Buenos Aires",
+    "localidad":"san Martin",
+    "causas":"Familia"
+},{
+    "id":"5",
+    "nombre":"Ernesto",
+    "apellido":"Dominguez",
+    "edad":"58",
+    "legajo":"849562",
+    "balance":"-2499",
+    "img":"https://robohash.org/Ernesto?set=set3",
+    "provincias":"Santa Fe",
+    "localidad":"Rosario",
+    "causas":"sanciones"
+}]

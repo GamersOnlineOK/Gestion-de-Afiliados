@@ -1,0 +1,27 @@
+[{
+    "id":1,
+    "nombre":"Penal",
+    "descr":{
+        "idc":"1",
+        "descripcion":"Causas de tipo Penal"
+    }
+    
+},
+{
+    "id":2,
+    "nombre":"Administrativo",
+    "descr":{
+        "idc":"2",
+        "descripcion":"Causas de tipo Adminsitrativa"
+    }
+    
+},
+{
+    "id":3,
+    "nombre":"Familia",
+    "descr":{
+        "idc":"3",
+        "descripcion":"Causas de tipo Familia"
+    }
+    
+}]
