@@ -41,8 +41,7 @@ function totalCausas(){
     var sans=0;
     var penal=0;
     var familia=0;
-    for (const afl of afiliados) {
-        
+    for (const afl of afiliados) {        
          (afl.causas);
         if (afl.causas=="sanciones") {
             admin++;

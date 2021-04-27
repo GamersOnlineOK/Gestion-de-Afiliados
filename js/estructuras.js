@@ -20,9 +20,7 @@ function imprimirBusqueda(afiliado){
     screenMode()    
 }
 
-function estructuraAfiliados(afiliado){
-
-    
+function estructuraAfiliados(afiliado){   
     
         if(afiliado.balance>=0){
         
