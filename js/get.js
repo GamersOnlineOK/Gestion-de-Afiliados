@@ -26,7 +26,6 @@
     // TRAE LOCALIDADES A PARTIR DE LA SELECCION DE PROVINCIAS
     $("#localidades").focus(function (e) { 
         e.preventDefault();
-         ("hola");
         var provincias = document.getElementById('provincias').value;
         const url2= "https://apis.datos.gob.ar/georef/api/departamentos?provincia=";
         const urlloc=url2+provincias+"&max=130";

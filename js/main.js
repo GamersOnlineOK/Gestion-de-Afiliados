@@ -24,7 +24,7 @@ const urlAfl="../data/afiliados.json";
 $.getJSON(urlAfl, 
     function (data,) {
         for (const dato of data) {
-            console.log(dato);
+            
         
         let id=dato.id;
         let nombre=dato.nombre;
@@ -71,14 +71,14 @@ function init(){
    // CARGAR AFILIADOS
 function cargarAfiliado(nombre,apellido,edad,legajo,provincias,localidad,causas) {
         id=afiliados.length+1;
-        console.log(id)
+        
         _id=id;
         img="https://robohash.org/"+nombre+"?set=set3";
         afiliado= new persona();
         // TODOS LOS AFILIADOS INICIAN CON UNA DEUDA DE 2499
         afiliado.setPersona(id,nombre,apellido,edad,legajo,-2499,img,provincias,localidad,causas);
         afiliados.push(afiliado);
-        console.log(afiliados);
+       
         
         $("#avisoAfl").empty();
         $("#avisoAfl").append(`
@@ -101,16 +101,12 @@ function cargarPago(afil, debe){
 
     
     // var objeto=afiliados.find(elemento=>elemento.legajo==legajo);
-    console.log(afil.balance);
     let selector="#template-container";
     $(selector).html(`<div></div>`);
 
     if(debe>0){
-
-        console.log(afil.nombre);
         deb=parseInt(debe);
         res=afil.balance+deb;
-        console.log(res);
         afil.balance=res;
         imprimirListado(afil);
     }
@@ -127,7 +123,6 @@ function cierreMes(){
     
     padre.appendChild(contenedor);
     contenedor.innerHTML=`<p class="green">Cierre de Mes realizado Correctamente</p>`;
-    console.log(afiliados);
     fadein();
     init();
 
@@ -136,12 +131,10 @@ function cierreMes(){
 }
     /*Filtra Objetos con balance Negativo */
 function filtrarDeudores(){
-    console.log("deudores");
     const objeto=afiliados.filter(elemento=>elemento.balance<0);
     let padre=document.getElementById("template-container");
     padre.innerHTML = '';
     for (const afiliado of objeto) {
-        console.log(afiliado.nombre);
         imprimirListado(afiliado);
     }
     
@@ -153,10 +146,7 @@ function filtrarDeudores(){
 var inputPagos=document.getElementsByClassName("inputPagos");
 function recorrerBotones(){
     var botones=document.getElementsByClassName("btn-pago");
-
-    console.log(botones);
     for (boton of botones) {
-        console.log(boton);
         boton.onclick = seleccionarAfiliado;
         
         
@@ -167,10 +157,7 @@ function recorrerBotones(){
 //RECORRE LOS BOTONES PARA ELIMINAR CORRECTAMENTE AL AFILIADO
 function recorrerEliminar(){
     var botones=document.getElementsByClassName("btn-eliminar");
-
-    console.log(botones);
     for (boton of botones) {
-        console.log(boton);
         boton.onclick = seleccionEliminar;
         
         
@@ -203,9 +190,6 @@ function fecha(){
     const mes= fecha.getMonth()+1;
     const dia=fecha.getDate();
     const anio=fecha.getFullYear();
-    console.log(mes);
-    console.log(dia);
-    console.log(anio);
     $("#date").append(`
                     <div>Fecha:${dia}/${mes}/${anio} </div>
     `);     

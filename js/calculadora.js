@@ -1,4 +1,3 @@
- ("calculadora");
 // CALCULO LA DEUDA TOTAL ENTRE LOS AFILIADOS QUE POSEEN DEDUDA
 function causas(){
 var total=0;

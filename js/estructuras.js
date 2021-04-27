@@ -2,8 +2,6 @@
 // RECIBE AFILIADOS DESDE MAIN Y DEVULVE LA ESTRUCTURA
 function imprimirListado(afiliado){
 
-     ("ImprimirListado");
-    
     let selector="#template-container";
     
     $(selector).prepend(estructuraAfiliados(afiliado));
@@ -11,8 +9,6 @@ function imprimirListado(afiliado){
     screenMode();   
 }
 function imprimirBusqueda(afiliado){
-
-     ("ImprimirBusqueda");
 
     let selector="#template-container";
     
@@ -77,9 +73,6 @@ function estructuraAfiliados(afiliado){
 // LO ENVIA A CARGAR PAGO
 function seleccionarAfiliado(e){
                                 prueba= this.id;
-                                var parent=this.parentNode.parentNode.childNodes[15].childNodes[0];
-                                console.log(parent);
-                                var child=this.parentNode.childNodes[0];
                                 var pago=this.parentNode.parentNode.childNodes[15].childNodes[0].value;                                
                                 var selecionAfiliado=afiliados.find(function(e){
                                     return e.id==prueba;
@@ -89,14 +82,12 @@ function seleccionarAfiliado(e){
 }
 // ENCUENTRA EL OBJETO CORRESPONDIENTE PARA SER ELIMINADO
 function seleccionEliminar(e){
-    // btn= this.id;
-     ("BotonEliminar");
-    btn=this.parentNode.parentNode.childNodes[11].childNodes[0].id;
-     (btn);
+    btn=this.parentNode.parentNode.childNodes[17].childNodes[0].id;
+     
     var selecionAfiliado=afiliados.find(function(e){
         return e.id==btn;
     });
-     (selecionAfiliado);
+     
     var afil=selecionAfiliado;
     var i = afiliados.indexOf( afil );
     afiliados.splice( i, 1 );
