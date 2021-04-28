@@ -1,7 +1,7 @@
 // TRAE PROVINCIAS PROVINCIAS
 // API NACION
     // VARIABLES
-    const URL="../data/tipoCausa.json";
+    const URL="https://gamersonlineok.github.io/Gestor-de-Afiliados/data/tipoCausa.json";
     const url= "https://apis.datos.gob.ar/georef/api/provincias";
     // TRAE PROVINCIAS DEDE API GEOREF
     $.ajax({
