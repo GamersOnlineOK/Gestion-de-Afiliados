@@ -24,4 +24,13 @@
         "descripcion":"Causas de tipo Familia"
     }
     
+},
+{
+    "id":4,
+    "nombre":"sanciones",
+    "descr":{
+        "idc":"3",
+        "descripcion":"Causas de tipo Familia"
+    }
+    
 }]

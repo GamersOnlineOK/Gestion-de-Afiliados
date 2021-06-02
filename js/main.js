@@ -20,7 +20,7 @@ class persona{
 
 var afiliados = [];
 // TRAE LOS DATOS DE afiliados.json Y LOS CARGA AL ARRAY AFILIADOS[]
-const urlAfl="../data/afiliados.json";
+const urlAfl="./data/afiliados.json";
 $.getJSON(urlAfl, 
     function (data,) {
         for (const dato of data) {
